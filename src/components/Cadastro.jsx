@@ -1,8 +1,8 @@
 import React from "react"; 
 
-function App() {
+function Cadastro() {
   return (
-    <div className="login">
+    <div className="cadastro">
         <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
                 <fieldset>
                     <legend class="formulario__legenda">Informações básicas</legend>
@@ -58,4 +58,4 @@ function App() {
   );
 }
 
-export default App;
+export default Cadastro;
