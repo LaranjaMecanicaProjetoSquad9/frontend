@@ -5,9 +5,14 @@
   max-width: 1366px;
   width: 100%;
   height: 7.25rem;
-  position: fixed;
+  position: sticky;
   left: 141px;
+  top: 0;
   background-color: white;
+}
+
+.header>input{
+  padding-left: 10px;
 }
 .pesquisa
 {

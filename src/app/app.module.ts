@@ -1,3 +1,4 @@
+import { Container } from './components/container/container.component.';
 import { Cards } from './components/cards/cards.component';
 import { Aside } from './components/aside/aside.component';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,8 @@ import { Header } from './components/header/header.component';
     Login,
     Aside,
     Header,
-    Cards
+    Cards,
+    Container
   ],
   imports: [
     BrowserModule,

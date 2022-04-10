@@ -1,9 +1,8 @@
-.components{
-  display: flex;
-  max-width: 1366px;
-  width: 100%;
-}
 
-.main{
-  margin-top: 7.25rem;
+
+.container{
+  max-width: 1225px;
+  width: 100%;
+  margin-left: 8.8125rem;
+  
 }
