@@ -4,9 +4,8 @@ cursor: pointer;
 
 .aside{
   width: 8.8125rem;
-  position: sticky;
-  left: 0;
-  top: 0;
+  position: fixed;
+  display: block;
 }
 
 .rotas__link{
@@ -19,7 +18,7 @@ cursor: pointer;
 .rotas__item{
   width: 3rem;
   height: 3rem;
-  background-color: red;
+  background-color: #C4C4C4;
   border-radius: 50%;
 }
 
