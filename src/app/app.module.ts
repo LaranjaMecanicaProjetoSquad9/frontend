@@ -1,3 +1,4 @@
+import { Aside } from './components/aside/aside.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,7 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-    Login
+    Login,
+    Aside
   ],
   imports: [
     BrowserModule,

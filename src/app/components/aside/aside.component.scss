@@ -1,0 +1,39 @@
+a{
+cursor: pointer;
+}
+
+.aside{
+  width: 8.8125rem;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+.rotas__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.rotas__item{
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.rotas{
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  align-items: center;
+  list-style: none;
+}
+
+#logo{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 1.875rem 0 2rem;;
+}
