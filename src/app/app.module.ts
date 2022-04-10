@@ -1,3 +1,4 @@
+import { Cards } from './components/cards/cards.component';
 import { Aside } from './components/aside/aside.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +13,8 @@ import { Header } from './components/header/header.component';
     AppComponent,
     Login,
     Aside,
-    Header
+    Header,
+    Cards
   ],
   imports: [
     BrowserModule,
