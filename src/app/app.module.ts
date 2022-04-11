@@ -1,3 +1,5 @@
+import { Lista } from './pages/lista/lista.component';
+import { HomePage } from './pages/home/home.component';
 import { Container } from './components/container/container.component.';
 import { Cards } from './components/cards/cards.component';
 import { Aside } from './components/aside/aside.component';
@@ -16,7 +18,9 @@ import { Header } from './components/header/header.component';
     Aside,
     Header,
     Cards,
-    Container
+    Container,
+    HomePage,
+    Lista
   ],
   imports: [
     BrowserModule,

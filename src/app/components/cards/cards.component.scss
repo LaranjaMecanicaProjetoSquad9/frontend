@@ -4,9 +4,31 @@
   background: #9E9E9E;
   border: 1px solid #CDCDCD;
   border-radius: 16px;
+  padding: 16px;
 }
 
 .dados{
   display: flex;
+  gap: 8px;
+}
+
+.nome__funcao{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stacks{
+  margin-top: 20px;
+}
+
+.stack__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-right: 6rem;
+}
+
+.stack__item{
 
 }
