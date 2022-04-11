@@ -1,3 +1,4 @@
+import { Cadastro } from './pages/cadastro/cadastro.component';
 import { Perfil } from './pages/perfil/perfil.component';
 import { Lista } from './pages/lista/lista.component';
 import { HomePage } from './pages/home/home.component';
@@ -22,7 +23,8 @@ import { Header } from './components/header/header.component';
     Container,
     HomePage,
     Lista,
-    Perfil
+    Perfil,
+    Cadastro
   ],
   imports: [
     BrowserModule,
