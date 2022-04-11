@@ -1,8 +1,16 @@
+h3{
+  font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+}
+
 .container{
   max-width: 1225px;
   width: 100%;
   margin-left: 8.8125rem;
-  
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;  
 }
 
 .cards__list{
@@ -22,4 +30,7 @@
 
 .bem__vindo{
   margin-bottom: 2.5rem;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
 }

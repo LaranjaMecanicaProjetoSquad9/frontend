@@ -1,0 +1,88 @@
+.container{
+  max-width: 1225px;
+  width: 100%;
+  margin-left: 15.75rem;
+}
+
+.perfil{
+  width: 39.875rem;
+  height: 39.875rem;
+  margin-top: 10.125rem;
+  background-color: #C4C4C4;
+  border-radius: 1rem;
+  padding: 3.9375rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.name{
+  display: flex;
+  gap: 2rem;
+}
+
+.name>span{
+  margin-bottom: 2rem;
+}
+
+.stack__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-right: 6rem;
+  margin-bottom: 2rem;
+}
+
+.stack__item{
+  width: 46px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  padding: 4px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+#textarea{
+  width: 35.6875rem;
+  height: 10rem;
+  margin-top: 20px;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #E5E5E5;
+  resize: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.004em;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+}
+
+.contato{
+  margin-top: 2rem;
+}
+
+.linkedin__email{
+  margin-top: 1.25rem;
+  
+}
+
+.linkedin__email>img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.linkedin{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}

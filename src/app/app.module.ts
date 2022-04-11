@@ -1,3 +1,4 @@
+import { Perfil } from './pages/perfil/perfil.component';
 import { Lista } from './pages/lista/lista.component';
 import { HomePage } from './pages/home/home.component';
 import { Container } from './components/container/container.component.';
@@ -20,7 +21,8 @@ import { Header } from './components/header/header.component';
     Cards,
     Container,
     HomePage,
-    Lista
+    Lista,
+    Perfil
   ],
   imports: [
     BrowserModule,
