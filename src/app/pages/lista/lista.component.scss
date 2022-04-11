@@ -1,0 +1,21 @@
+.container{
+  max-width: 1225px;
+  width: 100%;
+  margin-left: 8.8125rem;
+  
+}
+
+.cards__list{
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  margin-top: 1rem;
+}
+
+.card__item{
+  margin-bottom: 2rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
