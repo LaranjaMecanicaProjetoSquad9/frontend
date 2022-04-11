@@ -1,26 +1,68 @@
-<form action="" class="form">
+<main class="tela__login">
+  <div class="apresentacao__app">
 
-  <fieldset class="fildset__principal">
+      <h1 class="company__name">Technical Share</h1>
 
-      <div class="titulo">
-          <h2 class="login__titulo">Olá Sangue Laranja, tudo bem? 👋</h2>
-          <span class="login__mensagem">🍊 Vamos decolar com a mentoria laranja!</span>
-      </div>
+      <span class="ola__span">Olá #SangueLaranja</span>
 
-      <label for="email">Seu email:</label>
-      <input type="email" name="email" id="email" class="login__email" placeholder="exemplo@email.com" required/>
+  </div>
 
-      <label for="senha">Sua senha:</label>
-      <input type="password" id="senha" class="input_senha" placeholder="Digite sua senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[1-9])(?!.*[!@#$%^&*_=+-]).{6,12}$" title="A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula, um número e não pode contrer caracteres especiais como (!, @, # e etc) " required/>
+  <form action="" class="form">
 
-      <input type="checkbox" class="custom__checkbox" name="checkbox"/>
-      <label for="checkbox">Manter conectado</label>
-      <a href="#">Esqueci minha senha</a>
+    <fieldset class="fildset__principal">
+      
+        <h2 class="login__titulo">Faça login </h2>
+        
 
-      <button id="enviar" class="entrar">
-          Entrar
-      </button>
-  </fieldset>
+        
+        <input type="email" name="email" id="email" class="login__email input" placeholder="E-mail" />
+        <input type="password" id="senha" class="input_senha input" placeholder="Senha" />
+
+        <div class="options__remember">
+          <input type="checkbox" class="custom__checkbox" name="checkbox"/>
+          <label for="checkbox">Lembrar de mim</label>
+          <a href="#">Esqueci minha senha</a>
+        </div>       
+
+        <button id="enviar" class="entrar button" href="../lista/lista.component.html">
+            Entrar
+        </button>
+
+        <div class="lines">
+          <span class="line"></span>
+          <span>ou</span>
+        <span class="line2"></span>
+        </div>
+        
+
+        <button id="enviar" class="conectar__conta button" href="../lista/lista.component.html">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.95596 7.35599V10.807H13.748C13.302 13 11.435 14.26 8.95596 14.26C6.06851 14.2203 3.74862 11.8682 3.74862 8.98049C3.74862 6.09277 6.06851 3.74073 8.95596 3.70099C10.1562 3.69956 11.3194 4.11607 12.246 4.87899L14.846 2.27899C11.8636 -0.342937 7.50797 -0.68017 4.15752 1.45144C0.807071 3.58305 -0.733015 7.67121 0.37821 11.4836C1.48943 15.296 4.98491 17.9164 8.95596 17.914C13.423 17.914 17.485 14.665 17.485 8.97999C17.4781 8.43263 17.411 7.88769 17.285 7.35499L8.95596 7.35599Z" fill="#2E3A59"/>
+          </svg>         
+            
+          <span>Entrar com Google</span>
+        </button>
+
+        <button id="enviar" class="conectar__conta button" href="../lista/lista.component.html">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 18H6V6H10V8C10.8526 6.91525 12.1456 6.26857 13.525 6.237C16.0056 6.25077 18.0072 8.26938 18 10.75V18H14V11.25C13.84 10.1326 12.8818 9.30358 11.753 9.306C11.2593 9.32161 10.7932 9.53778 10.4624 9.90462C10.1316 10.2715 9.96464 10.7573 10 11.25V18ZM4 18H0V6H4V18ZM2 4C0.89543 4 0 3.10457 0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4Z" fill="#2E3A59"/>
+          </svg>
+          
+            
+          <span>Entrar com LinkedIn</span>
+          
+        </button>
+
+        <span class="cadastro">Ainda não é membro? <a href="">Cadastre-se</a> </span>
+        
+        
+    </fieldset>
+
+    
 
 
-  </form>
+    </form>
+
+</main>
+
+
