@@ -8,11 +8,15 @@ import { Cards } from './components/cards/cards.component';
 import { Aside } from './components/aside/aside.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AppComponent } from './app.component';
 import { Login } from './pages/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Header } from './components/header/header.component';
+import { AlertasComponent } from './alertas/alertas/alertas.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,16 @@ import { Header } from './components/header/header.component';
     Lista,
     Perfil,
     Cadastro,
-    Cadastro2
+    Cadastro2,
+    AlertasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ModalModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
