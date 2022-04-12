@@ -1,5 +1,5 @@
 main{
-  background-image: url(../../../background__login.svg) ;
+  background-image: url(../../../background__login.svg);
   height: 100vh;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -55,7 +55,8 @@ main{
   border: none;
 }
 
-input{
+input,
+select{
   padding: 1rem;
 }
 
