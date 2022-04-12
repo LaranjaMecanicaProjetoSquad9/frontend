@@ -1,3 +1,4 @@
+import { Agendamentos } from './pages/agendamentos/agendamentos.component';
 import { Cadastro2 } from './pages/cadastro2/cadastro2.component';
 import { Cadastro } from './pages/cadastro/cadastro.component';
 import { Perfil } from './pages/perfil/perfil.component';
@@ -31,7 +32,8 @@ import { AlertasComponent } from './alertas/alertas/alertas.component';
     Perfil,
     Cadastro,
     Cadastro2,
-    AlertasComponent
+    AlertasComponent,
+    Agendamentos
   ],
   imports: [
     BrowserModule,
