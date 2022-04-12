@@ -1,76 +1,98 @@
-<app-aside></app-aside>
-
-<div class="container">
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Agendamentos</a>
-    </li>
-
-    <svg width="1" height="36" viewBox="0 0 1 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0.5" x2="0.5" y2="36" stroke="#B4B4B4"/>
-    </svg>
 
 
-    <li class="nav-item">
-      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Histórico</a>
-    </li>
-  </ul>
-  <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-      <div class="card">
-        <div class="dados">
+
+  <div class="container">
+
+    <app-aside></app-aside>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#home">Agendamentos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu1">Histórico</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane container active" id="home">
+        <div id="card">
+
           <div class="foto">
             <img src="../../../favicon.ico" alt="">
           </div>
 
+
           <div class="nome__funcao">
-            <span class="name">Nome sobrenome</span>
+            <span class="nome">Nome sobrenome</span>
             <span class="funcao">Função</span>
           </div>
 
-        </div>
-        <div class="stacks">
+          <div class="date__hour">
+            <span class="date">Dia: xx/xx</span>
+            <span class="hour">Hora: xx:xx</span>
+          </div>
 
-          <ul class="stack__list">
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-          </ul>
+          <a class="status">
+            Cancelar mentoria
+          </a>
 
         </div>
       </div>
-    </div>
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-      <div class="card">
-        <div class="dados">
+
+      <div class="tab-pane container fade" id="menu1">
+        <div id="card">
+
           <div class="foto">
             <img src="../../../favicon.ico" alt="">
           </div>
 
+
           <div class="nome__funcao">
-            <span class="name">Nome sobrenome</span>
+            <span class="nome">Nome sobrenome</span>
             <span class="funcao">Função</span>
           </div>
 
-        </div>
-        <div class="stacks">
+          <div class="date__hour">
+            <span class="date">Dia: xx/xx</span>
+            <span class="hour">Hora: xx:xx</span>
+          </div>
 
-          <ul class="stack__list">
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-            <li class="stack__item">Skill</li>
-          </ul>
+          <a class="status">
+            Cancelar mentoria
+          </a>
+
+        </div>
+
+        <div id="card">
+
+          <div class="foto">
+            <img src="../../../favicon.ico" alt="">
+          </div>
+
+
+          <div class="nome__funcao">
+            <span class="nome">Nome sobrenome</span>
+            <span class="funcao">Função</span>
+          </div>
+
+          <div class="date__hour">
+            <span class="date">Dia: xx/xx</span>
+            <span class="hour">Hora: xx:xx</span>
+          </div>
+
+          <a class="status">
+            Cancelar mentoria
+          </a>
 
         </div>
       </div>
-    </div>
+
+
   </div>
 
-</div>
+
+
+
 

@@ -1,5 +1,7 @@
 a{
 cursor: pointer;
+text-decoration: none;
+color: black;
 }
 
 .aside{
@@ -35,6 +37,9 @@ cursor: pointer;
 }
 
 #logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
