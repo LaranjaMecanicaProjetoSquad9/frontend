@@ -12,6 +12,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { RouterModule, Routes } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { Login } from './pages/login/login.component';
@@ -40,8 +42,8 @@ import { AlertasComponent } from './alertas/alertas/alertas.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule.forRoot()
-
+    ModalModule.forRoot(),
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
