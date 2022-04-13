@@ -15,41 +15,38 @@
   <form action="" class="form">
 
     <fieldset class="fildset__principal">
-      
+
         <h2 class="login__titulo">Realize seu cadastro </h2>
-        
+
 
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="email" class="login__email input" placeholder="E-mail" />
-
-        <label for="sobrenome">Email</label>
-        <input type="text" name="sobrenome" id="email" class="login__email input" placeholder="E-mail" />
+        <input type="text" name="nome" id="email" class="login__email input" placeholder="Nome completo" [(ngModel)]='usuario.nome'/>
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" class="login__email input" placeholder="E-mail" />
+        <input type="email" name="email" id="email" class="login__email input" placeholder="E-mail" [(ngModel)]='usuario.email'/>
 
         <label for="criaSenha">Crie uma senha</label>
-        <input type="password" name="criaSenha" id="senha" class="input_senha input" placeholder="Senha" />
-        
+        <input type="password" name="criaSenha" id="senha" class="input_senha input" placeholder="Senha" [(ngModel)]='usuario.senha'/>
+
         <label for="confirmaSenha">Confirme sua senha</label>
-        <input type="password" name="confirmaSenha" id="senha" class="input_senha input" placeholder="Senha" />
+        <input type="password" name="confirmaSenha" id="senha" class="input_senha input" placeholder="Senha" [(ngModel)]='usuario.senha'/>
 
         <div class="buttons">
-          <button id="enviar" class="entrar " href="../lista/lista.component.html">
+          <button id="enviar" class="entrar ">
             VOLTAR
           </button>
 
-          <button id="enviar" class="entrar button" href="../lista/lista.component.html">
-            Continuar
+          <button id="enviar" class="entrar button" (click)='cadastrar()'>
+            Cadastrar
           </button>
 
-        </div> 
-        
-       
-        
+        </div>
+
+
+
     </fieldset>
 
-    
+
 
 
     </form>

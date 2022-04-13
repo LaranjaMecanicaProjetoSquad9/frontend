@@ -1,12 +1,13 @@
 export class Usuario {
 
-  public id: number;
-  public cpf: string;
-  public dataCriacaoConta: Date;
   public dataNascimento: Date;
+  public foto: string;
   public email: string;
+  public funcao: string;
+  public habilidade: string;
+  public id: string;
   public nome: string;
   public senha: string;
+  public telefone: string;
   public tipo: string;
-  public foto: string;
 }

@@ -14,7 +14,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { RouterModule, Routes } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
 import { Login } from './pages/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
