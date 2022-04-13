@@ -1,8 +1,9 @@
-main{
-  background-image: url(../../../background__login.svg) ;
-  height: 100vh;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+.container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1366px;
+  width: 100%;
+  padding: 3rem 8.8125rem 12.25rem 9rem;
 }
 
 .tela__login{
@@ -28,9 +29,18 @@ main{
   line-height: 41px;
   letter-spacing: 0.0025em;
   width: max-content;
+  color: #36357E;
+}
+
+.logo__login{
+  display: flex;
+  gap: 3.5rem;
 }
 
 .apresentacao__app{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   color: #ffffff;
   margin-top: 4.375rem;
 }
@@ -151,3 +161,26 @@ line-height: 17px;
   border-top: none;
 }
 
+.animacao{
+  margin-top: 1rem;
+}
+
+.roll__inputs{
+  height: 25rem;
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
+
+.roll__inputs::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.roll__inputs::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
+
+.roll__inputs::-webkit-scrollbar-thumb {
+  background-color: #36357E;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
