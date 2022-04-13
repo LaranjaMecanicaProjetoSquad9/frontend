@@ -4,7 +4,7 @@ import { Cadastro } from './pages/cadastro/cadastro.component';
 import { Perfil } from './pages/perfil/perfil.component';
 import { Lista } from './pages/lista/lista.component';
 import { HomePage } from './pages/home/home.component';
-import { Container } from './components/container/container.component.';
+
 import { Cards } from './components/cards/cards.component';
 import { Aside } from './components/aside/aside.component';
 import { NgModule } from '@angular/core';
@@ -27,7 +27,6 @@ import { AlertasComponent } from './alertas/alertas/alertas.component';
     Aside,
     Header,
     Cards,
-    Container,
     HomePage,
     Lista,
     Perfil,
