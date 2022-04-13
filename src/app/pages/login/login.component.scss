@@ -1,15 +1,8 @@
-main{
-  background-image: url(../../../background__login.svg) ;
-  max-height: 100vh;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
 
-.tela__login{
+
+.container{
   display: flex;
-  gap: 12.25rem;
+  justify-content: space-around;
   max-width: 1366px;
   width: 100%;
   padding: 3rem 8.8125rem 12.25rem 9rem;
@@ -30,11 +23,24 @@ main{
   line-height: 41px;
   letter-spacing: 0.0025em;
   width: max-content;
+  color: #36357E;
+}
+
+.logo__login{
+  display: flex;
+  gap: 3.5rem;
 }
 
 .apresentacao__app{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   color: #ffffff;
   margin-top: 4.375rem;
+}
+
+.animacao{
+  margin-top: 1rem;
 }
 
 /*FORMULARIO*/
