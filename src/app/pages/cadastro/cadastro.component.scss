@@ -172,15 +172,15 @@ line-height: 17px;
 }
 
 .roll__inputs::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 0.75rem;               /* width of the entire scrollbar */
 }
 
 .roll__inputs::-webkit-scrollbar-track {
-  background: orange;        /* color of the tracking area */
+  background: #F3F4F9;        /* color of the tracking area */
 }
 
 .roll__inputs::-webkit-scrollbar-thumb {
-  background-color: #36357E;    /* color of the scroll thumb */
+  background-color: orange;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid orange;  /* creates padding around scroll thumb */
+  border: 3px solid #F3F4F9;  /* creates padding around scroll thumb */
 }
