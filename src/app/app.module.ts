@@ -1,5 +1,5 @@
 import { Agendamentos } from './pages/agendamentos/agendamentos.component';
-import { Cadastro2 } from './pages/cadastro2/cadastro2.component';
+import {  Forum } from './pages/forum/forum.component';
 import { Cadastro } from './pages/cadastro/cadastro.component';
 import { Perfil } from './pages/perfil/perfil.component';
 import { Lista } from './pages/lista/lista.component';
@@ -31,7 +31,7 @@ import { AlertasComponent } from './alertas/alertas/alertas.component';
     Lista,
     Perfil,
     Cadastro,
-    Cadastro2,
+    Forum,
     AlertasComponent,
     Agendamentos
   ],

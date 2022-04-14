@@ -1,3 +1,4 @@
+import { Forum } from './pages/forum/forum.component';
 import { HomePage } from './pages/home/home.component';
 import { Agendamentos } from './pages/agendamentos/agendamentos.component';
 import { Perfil } from './pages/perfil/perfil.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'login' , component:Login},
   {path: 'perfil' , component:Perfil},
   {path: 'agenda' , component:Agendamentos},
-  {path: 'home' , component:HomePage}
+  {path: 'home' , component:HomePage},
+  {path: 'forum' , component:Forum}
 ];
 
   @NgModule({

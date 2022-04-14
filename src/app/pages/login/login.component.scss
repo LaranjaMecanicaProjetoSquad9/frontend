@@ -133,7 +133,18 @@ line-height: 17px;
 .cadastro{
   margin-top: 30px;
   font-weight: 400;
-font-size: 12px;
-line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 15px;
 }
+
+@media screen and (max-width: 768px){
+  .apresentacao__app{
+    display: none;
+  }
+
+  .fildset__principal{
+    background-color: #F3F4F9;
+  }
+}
+
 

@@ -4,6 +4,7 @@
   max-width: 1366px;
   width: 100%;
   padding: 3rem 8.8125rem 12.25rem 9rem;
+
 }
 
 .tela__login{
@@ -183,4 +184,15 @@ line-height: 17px;
   background-color: orange;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid #F3F4F9;  /* creates padding around scroll thumb */
+}
+
+
+@media screen and (max-width: 768px){
+  .apresentacao__app{
+    display: none;
+  }
+
+  .fildset__principal{
+    background-color: #F3F4F9;
+  }
 }

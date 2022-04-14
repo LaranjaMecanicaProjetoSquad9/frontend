@@ -25,3 +25,8 @@
   border-radius: 1rem;
 }
 
+@media screen and (max-width: 768px){
+  .header{
+    display: none;
+  }
+}

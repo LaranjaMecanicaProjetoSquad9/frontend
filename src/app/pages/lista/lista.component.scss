@@ -25,3 +25,15 @@ h3{
 ::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (max-width: 768px){
+  .cards__list,
+  h3{
+    margin: auto ;
+  }
+
+  .cards__list{
+    margin-top: 1rem;
+  }
+
+}

@@ -13,8 +13,8 @@ color: black;
   font-size: 0.75rem;
   line-height: 15px;
   z-index: 3;
-  
-  
+
+
 }
 
 .rotas__background{
@@ -56,4 +56,10 @@ color: black;
   height: 4rem;
   border-radius: 50%;
   margin: 1.875rem 0 2rem;;
+}
+
+@media screen and (max-width: 768px){
+  .aside{
+    display: none;
+  }
 }
