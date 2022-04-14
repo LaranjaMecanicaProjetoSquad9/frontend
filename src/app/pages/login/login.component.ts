@@ -6,8 +6,6 @@ import { AlertasService } from '../../service/alertas.service';
 import { AuthService } from '../../service/auth.service';
 
 
-
-
 @Component({
     selector:'app-login',
     templateUrl: './login.component.html',
@@ -39,7 +37,7 @@ export class Login implements OnInit {
       environment.token = this.userLogin.token
       environment.tipo = this.userLogin.tipo
 
-      this.router.navigate(['/landing-page'])
+      this.router.navigate(['/home'])
     }, erro=>{
       if(erro.status == 401){
         this.alertas.showAlertDanger('Usuário ou senha estão incorretos')
