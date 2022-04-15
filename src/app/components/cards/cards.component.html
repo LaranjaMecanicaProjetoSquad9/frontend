@@ -1,0 +1,27 @@
+<div class="card__lista">
+  <div class="card" *ngFor="let item of listaUsuario">
+    <div class="dados">
+      <div class="foto">
+        <img src="{{item.foto}}" alt="">
+      </div>
+
+      <div class="nome__funcao">
+        <span class="name">{{item.nome}}</span>
+        <span class="funcao">{{item.funcao}}</span>
+      </div>
+
+    </div>
+    <div class="stacks">
+
+      <ul class="stack__list">
+        <li class="stack__item">{{item.habilidade}}</li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+

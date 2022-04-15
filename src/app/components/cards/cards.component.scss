@@ -1,0 +1,69 @@
+.card{
+  width: 280px;
+  height: 156px;
+  background: #9E9E9E;
+  border: 1px solid #CDCDCD;
+  border-radius: 16px;
+  padding: 16px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.card__lista{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.dados{
+  display: flex;
+  gap: 8px;
+}
+
+.nome__funcao{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.funcao{
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1,0625rem;
+}
+
+.stacks{
+  margin-top: 20px;
+}
+
+.stack__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-right: 6rem;
+}
+
+.stack__item{
+  width: 33px;
+  height: 15px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0,75rem;
+  line-height: 15px;
+}
+
+.foto img{
+  width: 3.75rem;
+  height: 3.75rem;
+}

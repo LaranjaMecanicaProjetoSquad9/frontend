@@ -1,0 +1,150 @@
+
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1366px;
+  width: 100%;
+  padding: 3rem 8.8125rem 12.25rem 9rem;
+}
+
+.company__name{
+  font-weight: 300;
+  font-size: 3.8125rem;
+  line-height: 74px;
+  letter-spacing: -0.005em;
+  width: max-content;
+  margin-bottom: 3.5rem;
+}
+
+.ola__span{
+  font-weight: 400;
+  font-size: 2.125rem;
+  line-height: 41px;
+  letter-spacing: 0.0025em;
+  width: max-content;
+  color: #36357E;
+}
+
+.logo__login{
+  display: flex;
+  gap: 3.5rem;
+}
+
+.apresentacao__app{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #ffffff;
+  margin-top: 4.375rem;
+}
+
+.animacao{
+  margin-top: 1rem;
+}
+
+/*FORMULARIO*/
+
+.fildset__principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26rem;
+  padding: 2rem 3.5rem;
+  background: #EDEDED;
+  border-radius: 1rem;
+  border: none;
+}
+
+.input,
+.button{
+  width: 19rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+input{
+  padding: 1rem;
+}
+
+.login__titulo{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+.login__email{
+  margin-bottom: 1.5rem;
+}
+
+.input_senha{
+  margin-bottom: 1rem;
+}
+
+.options__remember{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.004em;
+}
+
+.options__remember>a{
+  margin-left: 2rem;
+  width: max-content;
+}
+
+.entrar{
+  background-color: #ED6C2A;
+  color: #ffffff;
+  margin: 2rem 0 1rem ;
+}
+
+.conectar__conta{
+  background-color: #C4C4C4;
+  font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+}
+
+.line,
+.line2{
+  border: 1px solid #A5A5A5;
+  width: 7.5rem;
+}
+
+.lines{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.conectar__conta{
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.cadastro{
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 15px;
+}
+
+@media screen and (max-width: 768px){
+  .apresentacao__app{
+    display: none;
+  }
+
+  .fildset__principal{
+    background-color: #F3F4F9;
+  }
+}
+
+

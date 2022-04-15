@@ -1,0 +1,41 @@
+.container{
+  max-width: 1225px;
+  width: 100%;
+  margin-left: 8.8125rem;
+  margin:90px auto;
+
+}
+
+
+
+.cards__list{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 14.8125rem;
+  flex-wrap: wrap;
+}
+
+h3{
+  margin-left: 14.8125rem;
+}
+
+.card__item{
+  margin-bottom: 2rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .cards__list,
+  h3{
+    margin: auto ;
+  }
+
+  .cards__list{
+    margin-top: 1rem;
+  }
+
+}

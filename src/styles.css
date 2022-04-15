@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+    font-family: 'Montserrat';
+    background-color: #F3F4F9;
+}
+
+

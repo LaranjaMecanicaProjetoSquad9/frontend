@@ -1,0 +1,27 @@
+.navbar{
+  display: none;
+}
+
+@media screen and (max-width:748px){
+  .search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F3F4F9;
+    z-index: 1;
+    display: flex;
+  }
+
+  .busca{
+    border: none;
+    background-color: transparent;
+  }
+}
+

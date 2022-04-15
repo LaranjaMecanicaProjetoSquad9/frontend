@@ -1,0 +1,232 @@
+.container{
+  max-width: 1225px;
+  width: 100%;
+}
+
+.perfil{
+  max-width: 39.875rem;
+  width: 100%;
+  height: 39.875rem;
+  margin-top: 10.125rem;
+  background-color: #C4C4C4;
+  border-radius: 1rem;
+  padding: 3.9375rem 1.8rem;
+  margin-left: 20%;
+  position: relative;
+
+}
+
+.perfil__geral{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.name{
+  display: flex;
+  gap: 2rem;
+}
+
+.name>span{
+  margin-bottom: 2rem;
+}
+
+.stack__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-right: 6rem;
+  margin-bottom: 2rem;
+}
+
+.stack__item{
+  width: max-content;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  padding: 4px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+#textarea{
+  max-width: 35.6875rem;
+  width: 100%;
+  height: 10rem;
+  margin-top: 20px;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #E5E5E5;
+  resize: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.004em;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+}
+
+.contato{
+  margin-top: 2rem;
+}
+
+.linkedin__email{
+  margin-top: 1.25rem;
+
+}
+
+.linkedin__email>img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.linkedin{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.image{
+  position: absolute;
+  margin-left: 16.8125rem;
+  top: 2.3rem;
+  width: 10rem;
+  height: 10rem;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.calendar{
+  max-width: 250px;
+  width: 100%;
+  margin-top: 10.125rem;
+}
+
+.month {
+  padding: 50px 15px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+@media screen and (max-width: 1170px){
+  .perfil__geral{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .calendar{
+    margin-left: 20%;
+    max-width: 39.875rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .perfil__geral{
+    display: flex;
+    flex-direction: column;
+    margin: 85px auto;
+  }
+
+  .perfil{
+    max-width: 528px;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .image{
+    margin-left: 2rem;
+    top: 7rem;
+    z-index: 1;
+  }
+
+  .container{
+    margin: auto;
+  }
+
+  .calendar{
+    max-width: 528px;
+    margin-left: 0;
+  }
+
+  .linkedin{
+    max-width: 528px;
+  }
+
+  .navbar{
+    z-index: 2;
+  }
+
+
+}
+
+
+

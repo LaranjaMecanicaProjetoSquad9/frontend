@@ -1,0 +1,198 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1366px;
+  width: 100%;
+  padding: 3rem 8.8125rem 12.25rem 9rem;
+
+}
+
+.tela__login{
+  display: flex;
+  gap: 12.25rem;
+  max-width: 1366px;
+  width: 100%;
+  padding: 3rem 8.8125rem 12.25rem 9rem;
+}
+
+.company__name{
+  font-weight: 300;
+  font-size: 3.8125rem;
+  line-height: 74px;
+  letter-spacing: -0.005em;
+  width: max-content;
+  margin-bottom: 3.5rem;
+}
+
+.ola__span{
+  font-weight: 400;
+  font-size: 2.125rem;
+  line-height: 41px;
+  letter-spacing: 0.0025em;
+  width: max-content;
+  color: #36357E;
+}
+
+.logo__login{
+  display: flex;
+  gap: 3.5rem;
+}
+
+.apresentacao__app{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #ffffff;
+  margin-top: 4.375rem;
+}
+
+/*FORMULARIO*/
+
+.fildset__principal{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 26rem;
+  padding: 2rem 3.5rem;
+  background: #EDEDED;
+  border-radius: 1rem;
+  border: none;
+}
+
+.input{
+  width: 19rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+input{
+  padding: 1rem;
+}
+
+.login__titulo{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+.login__email{
+  margin-bottom: 1.5rem;
+}
+
+.input_senha{
+  margin-bottom: 1rem;
+}
+
+label{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: left;
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.buttons{
+  display: flex;
+}
+
+.entrar{
+  width: 9.0625rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 1.75rem;
+}
+
+.entrar:last-child{
+  background: #ED6C2A;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.0125em;
+  color: #FFFFFF;
+}
+
+.entrar:first-child{
+  font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+}
+
+.texto__legal{
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 41px;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.animacao{
+  margin-top: 1rem;
+}
+
+.roll__inputs{
+  height: 25rem;
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
+
+.roll__inputs::-webkit-scrollbar {
+  width: 0.75rem;               /* width of the entire scrollbar */
+}
+
+.roll__inputs::-webkit-scrollbar-track {
+  background: #F3F4F9;        /* color of the tracking area */
+}
+
+.roll__inputs::-webkit-scrollbar-thumb {
+  background-color: orange;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #F3F4F9;  /* creates padding around scroll thumb */
+}
+
+
+@media screen and (max-width: 768px){
+  .apresentacao__app{
+    display: none;
+  }
+
+  .fildset__principal{
+    background-color: #F3F4F9;
+  }
+}
