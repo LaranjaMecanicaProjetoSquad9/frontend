@@ -1,7 +1,7 @@
 .card{
   width: 280px;
   height: 156px;
-  background: #9E9E9E;
+  background: #FFFFFF;
   border: 1px solid #CDCDCD;
   border-radius: 16px;
   padding: 16px;
@@ -35,9 +35,11 @@
 }
 
 .funcao{
-  font-weight: 500;
   font-size: 0.875rem;
-  line-height: 1,0625rem;
+  line-height: 1.0625rem;
+  font-weight: 600;
+  line-height: 20px;
+
 }
 
 .stacks{
@@ -49,21 +51,25 @@
   flex-wrap: wrap;
   gap: 4px;
   padding-right: 6rem;
+
 }
 
 .stack__item{
-  width: 33px;
-  height: 15px;
+  width: max-content;
+  height: max-content;
   background: #FFFFFF;
   border-radius: 16px;
   margin-bottom: 8px;
   text-align: center;
   font-weight: 400;
-  font-size: 0,75rem;
+  font-size: 0.75rem;
   line-height: 15px;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #36357E;
 }
 
 .foto img{
   width: 3.75rem;
   height: 3.75rem;
+  border-radius: 1rem;
 }

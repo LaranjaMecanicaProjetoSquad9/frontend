@@ -1,5 +1,5 @@
 <div class="card__lista">
-  <div class="card" *ngFor="let item of listaUsuario">
+  <button class="card" *ngFor="let item of listaUsuario" [routerLink]="['/perfil', item.id]">
     <div class="dados">
       <div class="foto">
         <img src="{{item.foto}}" alt="">
@@ -19,7 +19,7 @@
       </ul>
 
     </div>
-  </div>
+  </button>
 </div>
 
 

@@ -11,5 +11,5 @@ export class Usuario {
   public nome: string;
   public senha: string;
   public telefone: string;
-  public postagem: Postagem[];
+  public postagens: Postagem[];
 }

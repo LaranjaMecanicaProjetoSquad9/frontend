@@ -1,7 +1,7 @@
 h2,
 h3{
   margin-left: 8.8125rem;
-  margin-top: 1rem;
+
 }
 
 .container{
@@ -11,11 +11,16 @@ h3{
   font-size: 24px;
   line-height: 29px;
   margin: 90px auto;
+  padding-top: 5rem;
 }
 
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.titulo{
+  margin-top: 3rem;
 }
 
 .bem__vindo{
@@ -87,6 +92,7 @@ h3{
 
   .container{
     padding: 2rem;
+    margin-left: 0;
   }
 
   .postagem__salva--text{
@@ -98,6 +104,11 @@ h3{
     padding: 1rem 2rem;
 
   }
+
+  h2,
+  h3{
+  margin-left: 1rem;
+}
 }
 
 
