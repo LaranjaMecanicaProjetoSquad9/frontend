@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
     styleUrls: ['./aside.component.scss']
 })
 
-export class Aside{
+export class Aside implements OnInit{
+
+  id:number;
+
+  ngOnInit() {
+    this.id = environment.id;
+  }
 
 }

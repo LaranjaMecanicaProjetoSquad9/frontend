@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'cadastrar' , component:Cadastro},
   {path: 'lista' , component:Lista},
   {path: 'login' , component:Login},
-  {path: 'perfil' , component:Perfil},
+  {path: 'perfil/:id' , component:Perfil},
   {path: 'agenda' , component:Agendamentos},
   {path: 'home' , component:HomePage},
   {path: 'forum' , component:Forum}

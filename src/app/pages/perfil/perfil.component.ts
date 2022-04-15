@@ -1,3 +1,7 @@
+import { environment } from 'src/environments/environment.prod';
+import { UsuarioService } from './../../service/usuario.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Usuario } from 'src/app/model/usuario';
 import { Component } from '@angular/core';
 
 
@@ -8,5 +12,31 @@ import { Component } from '@angular/core';
 })
 
 export class Perfil{
+  usuario: Usuario = new Usuario();
+  idUsuario: number;
+
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private usuarioService: UsuarioService
+
+  ) { }
+
+  ngOnInit() {
+    this.usuarioService.refreshToken();
+    this.idUsuario = this.route.snapshot.params['id'];
+    this.findById(this.idUsuario);
+
+
+    if (environment.token == '') {
+      this.router.navigate(['/login'])}
+
+  }
+
+  findById(id: number){
+    this.usuarioService.getIdUser(id).subscribe((resp: Usuario)=>{
+      this.usuario = resp;
+    })
+  }
 
 }
