@@ -15,7 +15,8 @@ import { Component } from '@angular/core';
 export class Perfil{
   usuario: Usuario = new Usuario();
   idUsuario: number;
-  
+  perfil: boolean;
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -28,7 +29,7 @@ export class Perfil{
     this.idUsuario = this.route.snapshot.params['id'];
     this.findById(this.idUsuario);
     console.log(this.usuario.postagens);
-
+    this.consultaPerfil();
 
 
     if (environment.token == '') {
@@ -40,6 +41,14 @@ export class Perfil{
     this.usuarioService.getIdUser(id).subscribe((resp: Usuario)=>{
       this.usuario = resp;
     })
+  }
+
+  consultaPerfil(){
+    if(this.idUsuario == environment.id ){
+      this.perfil = false;
+    } else{
+      this.perfil = true;
+    }
   }
 
 }
