@@ -48,6 +48,9 @@
           <label for="email">Email</label>
           <input type="email" name="email" id="email" class="login__email input" placeholder="E-mail" [(ngModel)]='usuario.email'/>
 
+          <label for="foto">Link da foto</label>
+          <input type="email" name="foto" id="email" class="login__email input" placeholder="Foto" [(ngModel)]='usuario.foto'/>
+
           <label for="criaSenha">Crie uma senha</label>
           <input type="password" name="criaSenha" id="senha" class="input_senha input" placeholder="Digite sua Senha" (input)='confirmSenha($event)'/>
 
@@ -59,18 +62,18 @@
 
           <label for="funcao">Qual a sua função?</label>
           <select type="text" name="funcao" id="senha" class="input_senha input"  [(ngModel)]='usuario.funcao'>
-            <option value="">Mentor</option>
-            <option value="">Mentorado</option>
-            <option value="">Ambos</option>
+            <option value="Mentor">Mentor</option>
+            <option value="Mentorado">Mentorado</option>
+            <option value="Ambos">Ambos</option>
 
           </select>
 
           <label for="hab">Selecione Suas habilidades</label>
           <select type="text" name="hab" id="senha" class="input_senha input"  [(ngModel)]='usuario.habilidade'>
-            <option value="">Designer</option>
-            <option value="">Desenvolvedor Frontend</option>
-            <option value="">Desenvolvedor Backend</option>
-            <option value="">Desenvolvedor Full Stack</option>
+            <option value="Designer">Designer</option>
+            <option value="Desenvolvedor Frontend">Desenvolvedor Frontend</option>
+            <option value="Desenvolvedor Backend">Desenvolvedor Backend</option>
+            <option value="Desenvolvedor Full Stack">Desenvolvedor Full Stack</option>
           </select>
 
           <label for="telefone">Qual seu telefone?</label>

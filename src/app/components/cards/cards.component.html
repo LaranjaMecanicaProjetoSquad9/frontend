@@ -1,25 +1,31 @@
-<div class="card">
-  <div class="dados">
-    <div class="foto">
-      <img src="../../../favicon.ico" alt="">
+<div class="card__lista">
+  <div class="card" *ngFor="let item of listaUsuario">
+    <div class="dados">
+      <div class="foto">
+        <img src="{{item.foto}}" alt="">
+      </div>
+
+      <div class="nome__funcao">
+        <span class="name">{{item.nome}}</span>
+        <span class="funcao">{{item.funcao}}</span>
+      </div>
+
     </div>
+    <div class="stacks">
 
-    <div class="nome__funcao">
-      <span class="name">Nome sobrenome</span>
-      <span class="funcao">Função</span>
+      <ul class="stack__list">
+        <li class="stack__item">Skill</li>
+        <li class="stack__item">Skill</li>
+        <li class="stack__item">Skill</li>
+        <li class="stack__item">Skill</li>
+        <li class="stack__item">Skill</li>
+        <li class="stack__item">Skill</li>
+      </ul>
+
     </div>
-
-  </div>
-  <div class="stacks">
-
-    <ul class="stack__list">
-      <li class="stack__item">Skill</li>
-      <li class="stack__item">Skill</li>
-      <li class="stack__item">Skill</li>
-      <li class="stack__item">Skill</li>
-      <li class="stack__item">Skill</li>
-      <li class="stack__item">Skill</li>
-    </ul>
-
   </div>
 </div>
+
+
+
+

@@ -11,6 +11,12 @@
   line-height: 15px;
 }
 
+.card__lista{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .dados{
   display: flex;
   gap: 8px;

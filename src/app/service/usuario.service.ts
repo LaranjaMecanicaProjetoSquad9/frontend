@@ -24,7 +24,7 @@ export class UsuarioService {
   }
 
   getAllUser(): Observable<Usuario[]>{
-    return this.http.get<Usuario[]>('https://technicalshare-api.herokuapp.com/usuario/all', this.token)
+    return this.http.get<Usuario[]>('https://technicalshare-api.herokuapp.com/usuario', this.token)
   }
 
   getIdUser(id: number): Observable<Usuario>{
