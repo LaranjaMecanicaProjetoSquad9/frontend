@@ -10,7 +10,7 @@ import { NgModule } from '@angular/core';
 
 
 const routes: Routes = [
-  {path: '' , redirectTo: 'login', pathMatch: 'full'},
+  
 
   {path: 'cadastrar' , component:Cadastro},
   {path: 'lista' , component:Lista},
