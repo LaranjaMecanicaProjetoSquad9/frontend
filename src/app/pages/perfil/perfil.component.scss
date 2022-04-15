@@ -1,7 +1,6 @@
 .container{
   max-width: 1225px;
   width: 100%;
-
 }
 
 .perfil{
@@ -20,6 +19,7 @@
 .perfil__geral{
   display: flex;
   justify-content: space-between;
+  margin: 85px auto;
 }
 
 .name{
@@ -204,6 +204,8 @@ h3{
 
   .image{
     margin-left: 2rem;
+    top: 7rem;
+    z-index: 2;
   }
 
   .container{
@@ -217,6 +219,10 @@ h3{
 
   .linkedin{
     max-width: 528px;
+  }
+
+  .navbar{
+    z-index: 1;
   }
 
 
