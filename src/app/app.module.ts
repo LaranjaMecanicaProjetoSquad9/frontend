@@ -1,3 +1,4 @@
+import { Navbar } from './components/navbar/navbar.component';
 import { Agendamentos } from './pages/agendamentos/agendamentos.component';
 import {  Forum } from './pages/forum/forum.component';
 import { Cadastro } from './pages/cadastro/cadastro.component';
@@ -33,7 +34,8 @@ import { AlertasComponent } from './alertas/alertas/alertas.component';
     Cadastro,
     Forum,
     AlertasComponent,
-    Agendamentos
+    Agendamentos,
+    Navbar
   ],
   imports: [
     BrowserModule,
