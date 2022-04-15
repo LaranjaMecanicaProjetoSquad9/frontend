@@ -1,47 +1,30 @@
-
-
 <main class="container">
     <app-aside></app-aside>
     <app-header></app-header>
     <app-navbar></app-navbar>
 
-    <h2 class="bem__vindo">Seja bem vindo, Usuário</h2>
-    <h3>Mentores recomendados de acordo com o seu perfil</h3>
-    <ul class="cards__list">
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
+    <div class="postagem">
+      <h2 class="bem__vindo">Olá {{usuario.nome}} O que você está pensando?</h2>
+      <input type="text" placeholder="Título*" class="input" [(ngModel)]='postagem.titulo'>
+      <input type="text" placeholder="Link da foto" class="input" [(ngModel)]='postagem.foto'>
+      <textarea name="" placeholder="Sua dúvida pode ser a de outro @SangueLaranja!" id="textarea" cols="30" rows="10" [(ngModel)]='postagem.texto'></textarea>
+      <button class="postar"  (click)='Postar()'>Postar</button>
+    </div>
 
-    </ul>
-    <h3>Mentores online</h3>
-    <ul class="cards__list">
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
-      <li class="card__item"> <app-cards></app-cards></li>
+    <div class="postagem__salva" *ngFor="let item of listaPostagens">
+      <div class="user">
 
-    </ul>
+        <span class="titulo">{{item.titulo}} </span>
+
+        <!-- <span class="data__postagem">20/05/2021</span> -->
+
+      </div>
+
+      <div class="postagem__salva--text" >
+        {{item.texto}}
+        <img src="{{item.foto}}" alt="">
+      </div>
+    </div>
+
+
 </main>

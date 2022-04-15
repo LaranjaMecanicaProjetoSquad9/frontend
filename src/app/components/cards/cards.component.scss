@@ -52,18 +52,20 @@
 }
 
 .stack__item{
-  width: 33px;
-  height: 15px;
+  width: max-content;
+  height: max-content;
   background: #FFFFFF;
   border-radius: 16px;
   margin-bottom: 8px;
   text-align: center;
   font-weight: 400;
-  font-size: 0,75rem;
+  font-size: 0.75rem;
   line-height: 15px;
+  padding: 0 0.5rem;
 }
 
 .foto img{
   width: 3.75rem;
   height: 3.75rem;
+  border-radius: 1rem;
 }
