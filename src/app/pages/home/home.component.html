@@ -1,6 +1,6 @@
 <main class="container">
     <app-aside></app-aside>
-    <app-header></app-header>
+
     <app-navbar></app-navbar>
 
     <div class="postagem">
@@ -11,20 +11,24 @@
       <button class="postar"  (click)='Postar()'>Postar</button>
     </div>
 
-    <div class="postagem__salva" *ngFor="let item of listaPostagens">
-      <div class="user">
 
-        <span class="titulo">{{item.titulo}} </span>
+    <div cla ss="postados">
+      <div class="postagem__salva" *ngFor="let item of listaPostagens">
+        <div class="user">
 
-        <!-- <span class="data__postagem">20/05/2021</span> -->
+          <span class="titulo">{{item.titulo}} </span>
 
-      </div>
+          <!-- <span class="data__postagem">20/05/2021</span> -->
 
-      <div class="postagem__salva--text" >
-        {{item.texto}}
-        <img src="{{item.foto}}" alt="">
+        </div>
+
+        <div class="postagem__salva--text" >
+          {{item.texto}}
+          <img src="{{item.foto}}" alt="" class="image">
+        </div>
       </div>
     </div>
+
 
 
 </main>

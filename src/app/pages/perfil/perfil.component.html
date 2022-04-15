@@ -31,12 +31,33 @@
           <div class="linkedin__email">
 
             <div class="linkedin">
-              <img src="../../../favicon.ico" alt="">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.6665 26.6667H5.33317C3.86041 26.6667 2.6665 25.4728 2.6665 24V7.884C2.72865 6.45673 3.90455 5.33198 5.33317 5.33333H26.6665C28.1393 5.33333 29.3332 6.52724 29.3332 8V24C29.3332 25.4728 28.1393 26.6667 26.6665 26.6667ZM5.33317 10.4907V24H26.6665V10.4907L15.9998 17.6L5.33317 10.4907ZM6.39984 8L15.9998 14.4L25.5998 8H6.39984Z" fill="#212121"/>
+              </svg>
+
+
               <a href="#">E-mail: {{usuario.email}}</a>
             </div>
             <div class="linkedin">
-              <img src="../../../favicon.ico" alt="">
+              📞
               <a href="#">Telefone: {{usuario.telefone}}</a>
+            </div>
+
+            <div cla ss="postados">
+              <div class="postagem__salva"  *ngFor="let item of usuario.postagens">
+                <div class="user">
+
+                  <span class="titulo">{{item.titulo}} </span>
+
+                  <!-- <span class="data__postagem">20/05/2021</span> -->
+
+                </div>
+
+                <div class="postagem__salva--text" >
+                  {{item.texto}}
+                  <img src="" alt="{{item.foto}}" class="image">
+                </div>
+              </div>
             </div>
 
           </div>
@@ -101,6 +122,8 @@
         </ul>
 
       </div>
+
+
     </section>
 
 

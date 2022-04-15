@@ -1,3 +1,4 @@
+import { AlertasService } from 'src/app/service/alertas.service';
 import { PostagemService } from './../../service/postagem.service';
 import { Postagem } from './../../model/postagem';
 import { environment } from 'src/environments/environment.prod';
@@ -25,7 +26,10 @@ export class HomePage implements OnInit{
     private router: Router,
     private route: ActivatedRoute,
     private usuarioService: UsuarioService,
-    private postagemService: PostagemService
+    private postagemService: PostagemService,
+    private alertas: AlertasService
+
+
 
   ) { }
 
@@ -35,8 +39,7 @@ export class HomePage implements OnInit{
     //this.idUsuario = this.route.snapshot.params['id'];
     this.findById(this.idUser);
     this.findByAll();
-    console.log(this.listaPostagens);
-
+    
 
     if (environment.token == '') {
       this.router.navigate(['/login'])}
@@ -56,9 +59,12 @@ export class HomePage implements OnInit{
   }
 
   Postar(){
-    this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) =>{
+      this.postagem.usuario = this.usuario;
+      this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) =>{
       this.postagem = resp;
       this.findByAll();
+      this.alertas.showAlertSuccess("Postagem realizada com sucesso!")
+      this.usuario = new Usuario();
     })
   }
 

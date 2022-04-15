@@ -16,4 +16,18 @@ body{
     background-color: #F3F4F9;
 }
 
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+img[src=""],img[src="null"], img[src="undefined"] {
+  display: none;
+}
+
+.container{
+  height: 100vh;
+}
+
 

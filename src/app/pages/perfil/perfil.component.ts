@@ -1,3 +1,4 @@
+import { Postagem } from './../../model/postagem';
 import { environment } from 'src/environments/environment.prod';
 import { UsuarioService } from './../../service/usuario.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -14,7 +15,7 @@ import { Component } from '@angular/core';
 export class Perfil{
   usuario: Usuario = new Usuario();
   idUsuario: number;
-
+  
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -26,6 +27,8 @@ export class Perfil{
     this.usuarioService.refreshToken();
     this.idUsuario = this.route.snapshot.params['id'];
     this.findById(this.idUsuario);
+    console.log(this.usuario.postagens);
+
 
 
     if (environment.token == '') {
