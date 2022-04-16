@@ -66,26 +66,38 @@
 
       <div class="calendar">
 
+        
+
         <div class="month">
-          <ul>
-            <li class="prev">&#10094;</li>
-            <li class="next">&#10095;</li>
-            <li>
-              August<br>
-              <span style="font-size:18px">2021</span>
-            </li>
-          </ul>
+          <h5>Calendário de mentorias</h5>
+          <div class="ano__mes">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.70711 0.292893C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976313 7.31658 -0.0976313 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976312 7.31658 -0.0976311 7.70711 0.292893Z" fill="#8E8E8E"/>
+            </svg>
+              
+            <span>Abril 2022</span> 
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893C0.683418 -0.0976315 1.31658 -0.0976315 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071Z" fill="#212121"/>
+            </svg>
+              
+
+            
+
+          </div>
+           
         </div>
 
         <ul class="weekdays">
-          <li>Mo</li>
-          <li>Tu</li>
-          <li>We</li>
-          <li>Th</li>
-          <li>Fr</li>
-          <li>Sa</li>
-          <li>Su</li>
+          <li>Seg</li>
+          <li>Ter</li>
+          <li>Qua</li>
+          <li>Qui</li>
+          <li>Sex</li>
+          <li>Sáb</li>
+          <li>Dom</li>
         </ul>
+
+        
 
         <ul class="days">
           <li>1</li>
@@ -121,9 +133,20 @@
           <li>31</li>
         </ul>
 
-        <div class="selecionar__mentoria">
-          <button class="selecionar__mentoria--button"  *ngIf="perfil"  >Selecionar</button>
+        <div class="horarios">
+          <span>Horários disponíveis</span>
+          <ul class="horarios__disponiveis">
+            <li class="disponivel__item" >12:00</li>
+            <li class="disponivel__item">15:00</li>
+            <li class="disponivel__item">08:30</li>
+          </ul>
         </div>
+
+        <div class="selecionar__mentoria">
+          <button class="selecionar__mentoria--button"  *ngIf="perfil" >Selecionar</button>
+        </div>
+
+        
 
       </div>
 
@@ -132,3 +155,5 @@
 
 
 </main>
+
+
